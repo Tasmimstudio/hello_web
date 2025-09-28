@@ -1,3 +1,5 @@
 fastapi
 uvicorn
 neomodel
+neo4j
+python-dotenv

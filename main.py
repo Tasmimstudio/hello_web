@@ -1,9 +1,13 @@
 from fastapi import FastAPI
+from dotenv import load_dotenv
 from neomodel import config, StructuredNode, StringProperty, RelationshipTo, UniqueIdProperty
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
+# Example: access a variable
+secret_key = os.getenv("SECRET_KEY")
+print(secret_key)
 
 app = FastAPI()
 
